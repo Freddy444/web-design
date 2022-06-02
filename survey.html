@@ -1,3 +1,53 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="container"/>
+      <h1 id="title">Product survey form<h1>
+      <p id="description">Thank you for the taking the time to help us improve our product</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label">Name<input id="name" required placeholder="Enter your name" type="text"/>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="email-label">Email<input placeholder="Enter your email" id="email" type="email" required/></label>
+      </div>
+      <div class="form-group">
+        <label id="number-label">Age<input type="number" id="number" placeholder="Enter your age" min="13" max="120" required/></label>
+      </div>
+      <div class="form-group">
+        <p>How did you hear about us?</p>
+        <select required id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">social media</option>
+          <option vlaue="2">A friend</option>
+          <option value="3">Browsing</option>
+          <option vlaue="4">Other</other>       
+        </select>
+      </div>
 
-<link rel="stylesheets" href="styles.css" type="text">
+        <p>Would you reccommend us to your friends?</p>
+          <label><input name="def" type="checkbox" value="1"/>Definitley</label>
+          <label> <input name="maybe" type="checkbox" value="2"/>Maybe</label>
+          <label> <input name="not-sure" type="checkbox" value="3"/>Not sure</label>
+          <label><input name="no" type="checkbox" value="4"/>No</label>
+      <div class="form-group">
+        <p>What do you want to see improved</p>
+        <label><input name="imp" type="radio" value="1"/>option</label>
+        <label><input name="imp" type="radio" value="2"/>option</label>
+        <label><input name="improve" type="radio" value="3"/>option</label>
+        <label><input name="improve" type="radio" value="4"/>option</label>
+      </div>
+        <p>Any additional feedback?</p>
+        <textarea id="bio" rows="3" cols="30"></textarea>
+        <div>
+          <input id="submit" type="submit" value="Submit"/>
+        </div>
+    </form>
+  </body>
+</html>
